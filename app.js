@@ -58,14 +58,14 @@ const showWinner= (winner)=>{
 
 const checkWinner=()=>{
     for(let pattern of Winpatterns){
-        let posval1=boxes[pattern[0]].innerText;
-        let posval2=boxes[pattern[1]].innerText;
-        let posval3=boxes[pattern[2]].innerText;
+        let posvalue1=boxes[pattern[0]].innerText;
+        let posvalue2=boxes[pattern[1]].innerText;
+        let posvalue3=boxes[pattern[2]].innerText;
         
-      if(posval1 != "" && posval2 !="" && posval3 != ""){
-        if(posval1 === posval2 && posval2 === posval3){
-            console.log("winner",posval1);
-            showWinner(posval1);
+      if(posvalue1 != "" && posvalue2 !="" && posvalue3 != ""){
+        if(posvalue1 === posvalue2 && posvalue2 === posvalue3){
+            console.log("winner",posvalue1);
+            showWinner(posvalue1);
         }
       }
     }
